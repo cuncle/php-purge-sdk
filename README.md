@@ -9,7 +9,7 @@
 $upyun = new UpYun('bucketname', 'username', 'password');
 
 // 设置要刷的 url
-$url = 'http://xxx.b0.upaiyun.com/2.jpeg\n';
+$url = "http://xxx.b0.upaiyun.com/2.jpeg\n";
 
 // 调用刷新函数
 $upyun->purge($url);

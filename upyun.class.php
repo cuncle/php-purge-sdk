@@ -28,7 +28,6 @@ class UpYun {
 
     // 刷新缓存
     public function purge($url) {
-        $url = str_replace("http%3A%2F%2F", "http://", urlencode($url));
         $date = gmdate('D, d M Y H:i:s \G\M\T');
         $sign = md5("{$url}&{$this->_bucketname}&{$date}&{$this->_password}");
 

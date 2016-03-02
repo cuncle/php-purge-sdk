@@ -3,7 +3,6 @@ class UpYun {
     // SDK 版本
     const VERSION = '2.0';
 
-    const EXPECT = 'Expect:';
     const AUTHORIZATION = 'Authorization:';
     const DATE = 'Date:';
 

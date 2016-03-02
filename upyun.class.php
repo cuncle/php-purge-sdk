@@ -35,7 +35,6 @@ class UpYun {
 
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            self::EXPECT,
             self::AUTHORIZATION . " UpYun {$this->_bucketname}:{$this->_username}:{$sign}",
             self::DATE . $date
         ));
